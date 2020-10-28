@@ -1,9 +1,15 @@
+#include "Simul.h"
 #include <iostream>
+#include <vector>
+#include <string>
 
-using namespace std;
-
-int main()
+int main(int argc, char * argv[])
 {
-    cout << "Hello World!" << endl;
-    return 0;
+
+    // Convert arguments into a vector of strings
+    const std::vector<std::string> args(argv, argv + argc);
+
+    // Run the program
+    return simulate(args);
+
 }
